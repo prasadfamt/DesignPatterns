@@ -10,6 +10,7 @@ public class Animal {
     private double height;
     private int speed;
     private String sound;
+    private Flyable flyablity;
 
     public String getName() {
         return name;
@@ -53,6 +54,13 @@ public class Animal {
 
     public void setSound(String sound) {
         this.sound = sound;
+    }
+
+    public String getFlyablity() {
+        return flyablity.fly();
+    }
+    public void setFlyable(Flyable flyablity) {
+        this.flyablity = flyablity;
     }
 
 }
